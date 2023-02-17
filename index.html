@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/style.css">
    <link rel="icon" href="" type="image/gif" sizes="16x16">
    <title>Webovio</title>
 </head>
@@ -17,22 +17,22 @@
             <a href="#" class="header-logo">
                <img src="image/Logo.svg" alt="Logo" class="header-image">
             </a>
-            <div class="header__body">
-               <nav class="header__menu menu">
-                  <ul class="menu__list">
-                     <li class="menu__item">
-                        <a href="#" class="menu__link">About</a>
-                     </li>
-                     <li class="menu__item">
-                        <a href="#" class="menu__link">Contacts</a>
-                     </li>
-                     <li class="menu__item">
-                        <a href="#" class="menu__link">links</a>
-                     </li>
-                  </ul>
+            <div class="overlay-navigation">
+               <nav class="navigation" role="navigation">
+                 <ul>
+                   <li><a href="#" data-content="The beginning">Home</a></li>
+                   <li><a href="#" data-content="Curious?">About</a></li>
+                   <li><a href="#" data-content="I got game">Skills</a></li>
+                   <li><a href="#" data-content="Only the finest">Works</a></li>
+                   <li><a href="#" data-content="Don't hesitate">Contact</a></li>
+                 </ul>
                </nav>
-               <div class="menu__icon"><span></span></div>
-            </div>
+             </div>
+             <div class="open-overlay">
+               <span class="bar-top"></span>
+               <span class="bar-middle"></span>
+               <span class="bar-bottom"></span>
+             </div>
          </div>
       </header>
       <main class="page">
@@ -293,6 +293,10 @@
          </div>
       </footer>
    </div>
+   <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
    <script src="script/main.js"></script>
 </body>
 
